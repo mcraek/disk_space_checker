@@ -1,24 +1,24 @@
-﻿## Program Name 
+﻿# Program Name 
 disk_space_checker
 
-## Summary
+# Summary
 Determines based on user defined or default thresholds, whether or not each partition on a system is in a 
 critical / warning or non-critical / warning state based on the amount of free space available.
 
 **Tested with Python 3.8.1**
 ** Designed for Windows systems only **
 
-## Setup
+# Setup
 1. Create and activate your virtual environment
 2. Install requirements with pip install -r requirements.txt
 3. Call main program via disk_space_checker.py
 
 
-## Author
+# Author
 Kyle McRae
 
 
-## Arguments
+# Arguments
 -ct, --checktype {critical, warning}, default = critical: Specifies how thresholds should be calculated for 
 each partition. Critical sets the most strict thresholds
 
@@ -92,6 +92,6 @@ e.g., python .\disk_space_checker.py --include c e
 - Do not include : symbols or commas. Each parition you wish to check should be separated by a space
 
    
-## Meta
+# Meta
 
 Distributed under the GNU Lesser General Public License (LGPL 3)+. See LICENSE file for more information.
