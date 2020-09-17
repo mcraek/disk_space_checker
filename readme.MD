@@ -40,23 +40,23 @@ instead of system partition to calculate the overal status of the partition
 should be used for determining the system partition status 
 
 
-## Explanation of thresholds used for checks
+# Explanation of thresholds used for checks
 
-# Critical thresholds:
+## Critical thresholds:
 - By default a system partition is considered critical if it falls below 15 GB disk space
 
 - By default a data partition is considered critical if it falls below the lesser of 15 % total partition size 
 or 30 GB. This way a 3 TB drive with 15 % free disk space (450 GB) is not considered critical until it falls below 
 30 GB
 
-# Warning thresholds:
+## Warning thresholds:
 - By default a system parition is considered to be in a warning state if it falls below 30 GB disk space
 
 - By default a data partition is considered to be in a warning state if it falls below the lesser of 40% total 
 partition size or 60 GB. A 3 TB partition with 40% free space (1.2 TB) will not be considered to be in a warning 
 state until it hits 60 GB
 
-# Important note re: Default checks and using custom thresholds
+## Important note re: Default checks and using custom thresholds
 - If a user specifies no argument when running the executable, the default check performed is a critical check 
 with the default thresholds described above
 
@@ -68,20 +68,20 @@ used for determining whether system / data partitions are in a critical state
 - If the -sid argument is specified as True, system partitions are calculated using data partition thresholds
 
 
-## Examples
+# Examples
 
-# Usage Example 1: Viewing critical paritition disk space status based on default thresholds
+## Usage Example 1: Viewing critical paritition disk space status based on default thresholds
 
 python .\disk_space_checker.py - Checks system against default thresholds
 
 - Once complete, the program displays in the console whether or not all partitions are good or if any are in a 
 critical state per default tresholds defined above
 
-# Usage Example 2: Specifying custom thresholds
+## Usage Example 2: Specifying custom thresholds
 
 python .\disk_space_checker-py -st 50 -ct warning - Checks system partition setting the threshold to 50 GB and check type to warning
 
-# Usage Example 3: Specifying specific partitions to check on a system
+## Usage Example 3: Specifying specific partitions to check on a system
 
 - You may not want to check all paritions by defualt on a system
 
